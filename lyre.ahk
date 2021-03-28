@@ -49,7 +49,7 @@ F8::
 
             } else {
                 PixelGetColor, pixelColor, X_COORDS[i], Y_COORDS[i]
-                if(IsSimilarColor(ACTIVATION_COLOR, pixelColor, 400)) {
+                if(IsSimilarColor(ACTIVATION_COLOR, pixelColor, 3200)) {
                     Send {%keyCode% down}
                     curKeyPressCycles[i] := KEY_PRESS_CYCLE_DURATION
                 }
